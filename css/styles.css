@@ -1,3 +1,12 @@
+:root[data-theme="light"] {
+  --green: #66e2dc;
+  --tomato: #fa7453;
+  --orange: #ffb964;
+  --white: #fcfaf9;
+  --black: #191826;
+}
+
+
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -19,9 +28,9 @@ body {
   margin: 0;
   font-family: "IBM Plex Sans", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #222;
+  line-height: 26px;
+  background-color: var(--white);
+  color: var(--black);
 }
 
 img {
