@@ -150,6 +150,56 @@ select:-webkit-autofill:focus {
   margin: 0;
 }
 
+.cta {
+}
+.cta__container {
+}
+.cta__bg-box {
+}
+.cta__bg-pattern {
+}
+.cta__phone-picture {
+}
+.cta__phone-img {
+}
+.cta__info {
+}
+.cta__info-heading {
+}
+.cta__info-text {
+}
+.cta__price-wrapper {
+}
+.cta__price {
+}
+.button {
+}
+.button--dark {
+}
+.button--block {
+}
+.button__inner {
+}
+.button__icon {
+}
+.button__text {
+}
+.site-footer {
+}
+.site-footer__container {
+}
+.site-footer__text {
+}
+.socials {
+}
+.socials__list {
+}
+.socials__item {
+}
+.socials__link {
+}
+.socials__icon {
+}
 
 
 @media
