@@ -30,6 +30,9 @@ body {
   font-size: 16px;
   line-height: 26px;
   background-color: var(--white);
+  background-image: url("../img/body-bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
   color: var(--black);
 }
 
@@ -94,6 +97,36 @@ select:-webkit-autofill:focus {
   flex-grow: 1;
 }
 
+
+/* LOGO */
+.logo {
+  display: block;
+  text-decoration: none;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.6;
+}
+
+.logo__img {
+  display: block;
+  width: 146px;
+  height: 32px;
+  object-fit: contain;
+}
+
+
+/* SITE-HEADER */
+.site-header {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
@@ -102,4 +135,31 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 
+}
+
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-image:
+      url("../img/bg-pattern-1.svg"),
+      url("../img/body-bg-tablet.svg");
+    background-position: right -36px top -32px, left top;
+    background-size: 267px 400px, 100%;
+  }
+
+  .site-header {
+    padding-top: 62px;
+    padding-bottom: 62px;
+  }
+}
+
+@media only screen and (min-width: 1190px) {
+  body {
+    background-image:
+      url("../img/bg-pattern-1.svg"),
+      url("../img/body-bg-desktop.svg");
+    background-position: right 0 top -40px, left top;
+    background-size: 312px 468px, 100%;
+    /* TODO check body bg img */
+  }
 }
