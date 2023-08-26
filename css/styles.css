@@ -127,6 +127,31 @@ select:-webkit-autofill:focus {
 }
 
 
+/* HERO */
+.hero {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.hero__content {
+  width: 100%;
+  max-width: 520px;
+}
+
+.hero__heading {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.455px;
+}
+
+.hero__text {
+  margin: 0;
+}
+
+
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
@@ -138,8 +163,17 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 
+@media only screen and (min-width: 375px) {
+  .hero__heading {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   body {
+    font-size: 18px;
+    line-height: 28px;
     background-image:
       url("../img/bg-pattern-1.svg"),
       url("../img/body-bg-tablet.svg");
@@ -151,15 +185,55 @@ only screen and (                min-resolution: 2dppx) {
     padding-top: 62px;
     padding-bottom: 62px;
   }
+
+  .hero {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .hero__heading {
+    margin-bottom: 28px;
+    font-size: 64px;
+    line-height: 1;
+    letter-spacing: -0.727px;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .hero__content {
+    max-width: 70%;
+  }
 }
 
 @media only screen and (min-width: 1190px) {
   body {
+    font-size: 20px;
+    line-height: 34px;
     background-image:
       url("../img/bg-pattern-1.svg"),
       url("../img/body-bg-desktop.svg");
     background-position: right 0 top -40px, left top;
     background-size: 312px 468px, 100%;
     /* TODO check body bg img */
+  }
+
+  .hero {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .hero__content {
+    max-width: 100%;
+  }
+
+  .hero__heading {
+    max-width: 1015px;
+    margin-bottom: 40px;
+    font-size: 88px;
+    letter-spacing: -1;
+  }
+
+  .hero__text {
+    max-width: 825px;
   }
 }
