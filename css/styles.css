@@ -1,3 +1,7 @@
+:root {
+  --container-padding: 24px;
+}
+
 :root[data-theme="light"] {
   --green: #66e2dc;
   --tomato: #fa7453;
@@ -85,8 +89,8 @@ select:-webkit-autofill:focus {
 .container {
   width: 100%;
   max-width: 1190px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
   margin-left: auto;
   margin-right: auto;
 }
@@ -221,6 +225,10 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 @media only screen and (min-width: 768px) {
+  :root {
+    --container-padding: 40px;
+  }
+
   body {
     font-size: 18px;
     line-height: 28px;
