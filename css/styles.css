@@ -521,10 +521,13 @@ only screen and (                min-resolution: 2dppx) {
   }
 
   .cta__bg-box {
+    top: 40px;
     justify-content: flex-start;
   }
 
   .cta__bg-pattern {
+    width: 312px;
+    height: 468px;
     margin-top: -40px;
     margin-left: 336px;
   }
@@ -532,7 +535,8 @@ only screen and (                min-resolution: 2dppx) {
   .cta__phone-picture {
     width: 312px;
     height: 642px;
-    top: -213px;
+    top: -173px;
+    left: 142px;
   }
 
   .cta__phone-img {
@@ -543,6 +547,8 @@ only screen and (                min-resolution: 2dppx) {
   .cta__info {
     max-width: 446px;
     padding: 58px 54px 48px;
+    margin-right: 95px;
+    margin-top: 130px;
   }
 
   .cta__info-heading {
@@ -557,8 +563,13 @@ only screen and (                min-resolution: 2dppx) {
     line-height: 34px;
   }
 
-  .cta__price {
+  .cta__price-wrapper {
     margin-bottom: 46px;
+  }
+
+  .site-footer {
+    padding-top: 87px;
+    padding-bottom: 90px;
   }
 
   .site-footer__container {
@@ -574,6 +585,8 @@ only screen and (                min-resolution: 2dppx) {
   .site-footer__text {
     max-width: 366px;
     margin-right: auto;
+    font-size: 16px;
+    line-height: 26px;
   }
 
   .site-footer__socials {
