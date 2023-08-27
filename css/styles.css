@@ -104,6 +104,7 @@ select:-webkit-autofill:focus {
 
 /* LOGO */
 .logo {
+  flex-shrink: 0;
   display: block;
   text-decoration: none;
 }
@@ -177,6 +178,38 @@ select:-webkit-autofill:focus {
 .button__icon {
   margin-right: 8px;
 }
+
+
+/* SOCIALS */
+.socials__list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.socials__link {
+  display: block;
+  color: var(--black);
+}
+
+.socials__link:hover {
+  color: var(--tomato);
+}
+
+.socials__link:active {
+  opacity: 0.6;
+}
+
+.socials__icon {
+  display: block;
+}
+
 
 
 /* SITE-HEADER */
@@ -303,21 +336,34 @@ select:-webkit-autofill:focus {
   margin-bottom: 16px;
 }
 
+
+/* SITE-FOOTER */
 .site-footer {
+  padding-top: 64px;
+  padding-bottom: 80px;
 }
-.site-footer__container {
+
+.site-footer__logo {
+  margin-bottom: 32px;
 }
+
 .site-footer__text {
+  margin-top: 0;
+  margin-bottom: 64px;
 }
-.socials {
+
+.site-footer__mailto-link {
+  font-weight: bold;
+  color: var(--black);
+  text-decoration: none;
 }
-.socials__list {
+
+.site-footer__mailto-link:hover {
+  color: var(--tomato);
 }
-.socials__item {
-}
-.socials__link {
-}
-.socials__icon {
+
+.site-footer__mailto-link:active {
+  opacity: 0.6;
 }
 
 
@@ -411,6 +457,29 @@ only screen and (                min-resolution: 2dppx) {
     line-height: 1;
     letter-spacing: -0.727px;
   }
+
+  .site-footer__container {
+    display: grid;
+    justify-items: start;
+    align-items: center;
+    grid-template-columns: 366px 1fr;
+    grid-template-rows: auto auto;
+    gap: 32px 24px;
+  }
+
+  .site-footer__logo {
+    margin-bottom: 0;
+  }
+
+  .site-footer__text {
+    margin-bottom: 0;
+    grid-row: 2;
+  }
+
+  .site-footer__socials {
+    grid-row: 2;
+    justify-self: end;
+  }
 }
 
 @media only screen and (min-width: 850px) {
@@ -490,5 +559,24 @@ only screen and (                min-resolution: 2dppx) {
 
   .cta__price {
     margin-bottom: 46px;
+  }
+
+  .site-footer__container {
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .site-footer__logo {
+    margin-right: 138px;
+  }
+
+  .site-footer__text {
+    max-width: 366px;
+    margin-right: auto;
+  }
+
+  .site-footer__socials {
+    align-self: center;
   }
 }
