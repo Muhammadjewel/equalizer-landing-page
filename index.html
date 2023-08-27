@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="en">
+<html class="page" lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -49,6 +49,8 @@
         </div>
 
         <picture class="cta__phone-picture">
+          <source srcset="img/phone-desktop.png 1x, img/phone-desktop@2x.png 2x" media="(min-width:1190px)">
+          <source srcset="img/phone-tablet.png 1x, img/phone-tablet@2x.png 2x" media="(min-width:768px)">
           <img class="cta__phone-img" src="img/phone-mobile.png" alt="EQ app preview" width="209" height="430" srcset="img/phone-mobile.png 1x, img/phone-mobile@2x.png 2x">
         </picture>
 
@@ -58,13 +60,13 @@
           <div class="cta__price-wrapper">
             <b class="cta__price">$4</b> / month
           </div>
-          <a class="button button--dark button--block" href="#" target="_blank">
+          <a class="cta__button button button--dark button--block" href="#" target="_blank">
             <span class="button__inner">
               <img class="button__icon" src="img/icon-apple.svg" alt="" width="18" height="20" aria-hidden="true">
               <span class="button__text">iOS Download</span>
             </span>
           </a>
-          <a class="button button--dark button--block" href="#" target="_blank">
+          <a class="cta__button button button--light button--block" href="#" target="_blank">
             <span class="button__inner">
               <img class="button__icon" src="img/icon-android.svg" alt="" width="17" height="20" aria-hidden="true">
               <span class="button__text">Android Download</span>
